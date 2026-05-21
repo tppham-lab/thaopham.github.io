@@ -6,7 +6,7 @@
   <title>Thao P. Pham</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -75,7 +75,12 @@
   <a href="teaching.html">Teaching</a>
   <a href="resources.html">Resources</a>
   <a href="blog.html">Writing</a>
+  <button class="theme-toggle" onclick="toggleTheme()">light / dark</button>
 </nav>
 
+<script>
+  (function(){ if(localStorage.getItem("theme")==="light") document.body.classList.add("light"); })();
+  function toggleTheme(){ document.body.classList.toggle("light"); localStorage.setItem("theme", document.body.classList.contains("light")?"light":"dark"); }
+</script>
 </body>
 </html>

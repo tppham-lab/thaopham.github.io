@@ -13,11 +13,11 @@ I am an education policy researcher whose work sits at the intersection of **qua
 
 My work unfolds along two lines:
 
-**Spatial inequality in Vietnam.** I use spatial econometrics and Bayesian methods to examine how Confucian institutional legacies shape contemporary gaps in educational investment and attainment across Vietnamese provinces. This line of work treats historical institution as a causal variable, not background noise.
+**Spatial inequality in Vietnam.** I use spatial econometrics and Bayesian methods to examine how Confucian institutional legacies shape contemporary gaps in educational investment and attainment across Vietnamese provinces. This line of work treats historical culture as a causal variable, not background noise.
 
 **Indochina-origin communities in comparative perspective.** I study Vietnamese, Cambodian, Lao, and Hmong populations in the United States, England, and France — groups that education data routinely collapses into a single "Asian American" or "Asian" category. My research disaggregates these communities to ask how Confucian heritage and refugee experience jointly shape educational trajectories across national contexts.
 
-**Methods:** Spatial analysis, Bayesian inference, Natural language processing (NLP).
+**Methods:** spatial regression, adaptive LASSO, Tobit models, regression discontinuity, Bayesian inference, NLP.
 
 **Fields:** education policy, sociology of education, comparative education, quantitative history, Asian American studies.
 
@@ -64,6 +64,5 @@ Tran, T.-V., **Pham, T.P.**, Nguyen, M.-H., Do, L.-T., & Pham, H.-H. (2022). "Ec
 ## Education
 
 - **PhD**, Education Policy Studies — University of Wisconsin–Madison *(in progress)*
-- **MS**, Applied Statistics — University of Wisconsin–Madison
 - **MA**, Public Policy — Indiana University Bloomington
-- **BSc**, Economics — University of Manchester, UK
+- **BA/BSc**, Economics — University of Manchester, UK

@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teaching &mdash; Thao P. Pham</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<h1>Teaching</h1>
+<h1 class="page-title">Teaching</h1>
 <p class="title-line"><a href="index.html">Thao P. Pham</a> &middot; University of Wisconsin&ndash;Madison</p>
 
 <h3>Courses</h3>
@@ -33,7 +35,12 @@
   <a href="teaching.html">Teaching</a>
   <a href="resources.html">Resources</a>
   <a href="blog.html">Writing</a>
+  <button class="theme-toggle" onclick="toggleTheme()">light / dark</button>
 </nav>
 
+<script>
+  (function(){ if(localStorage.getItem("theme")==="light") document.body.classList.add("light"); })();
+  function toggleTheme(){ document.body.classList.toggle("light"); localStorage.setItem("theme", document.body.classList.contains("light")?"light":"dark"); }
+</script>
 </body>
 </html>

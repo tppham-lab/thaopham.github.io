@@ -1,25 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* ── colour tokens ── */
 :root {
-  --bg:      #1a1b1e;
-  --off-bg:  #222326;
-  --fg:      #d4d4d0;
-  --muted:   #5a5c63;
-  --link:    #7eaac8;
-  --hover:   #88c0b4;
+  --bg:    #0a0a0a;
+  --fg:    #d8d8d0;
+  --h:     #ffffff;
+  --muted: #555550;
+  --link:  #b0b0a8;
+  --hover: #ffffff;
+  --border:#222220;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+body.light {
+  --bg:    #f4f0e6;
+  --fg:    #2a2a26;
+  --h:     #000000;
+  --muted: #888880;
+  --link:  #3a3a36;
+  --hover: #000000;
+  --border:#d4d0c4;
+}
+
+/* ── base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: 'Fira Mono', 'Courier New', monospace;
-  font-size: 15px;
-  line-height: 1.7;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.8;
   padding: 4rem 1.5rem 6rem;
   max-width: 680px;
   margin: 0 auto;
+  transition: background 0.3s, color 0.3s;
 }
 
 a {
@@ -31,20 +45,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* name */
-h1 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 0.15rem;
-}
-
-.title-line {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-bottom: 0;
-}
-
-/* header with photo */
+/* ── header with photo ── */
 .header-row {
   display: flex;
   align-items: flex-start;
@@ -59,93 +60,129 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  filter: grayscale(20%);
   margin-top: 0.2rem;
+  filter: grayscale(30%);
 }
 
 .header-text { flex: 1; }
+
+/* ── name ── */
+h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--h);
+  margin-bottom: 0.15rem;
+  letter-spacing: 0.02em;
+}
+
+.title-line {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
 
 .intro {
   margin-top: 0.8rem;
   margin-bottom: 0;
   font-size: 0.92rem;
-  color: var(--fg);
 }
 
-/* section headings — markdown style */
+/* ── section headings ── */
 h3 {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--h);
   margin: 2.5rem 0 0.7rem;
-  color: var(--fg);
 }
 
 h3::before {
   content: '## ';
   color: var(--muted);
+  font-weight: 400;
 }
 
-/* page title on inner pages */
+/* ── page title on inner pages ── */
 h1.page-title {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--h);
   margin-bottom: 2rem;
 }
 
 h1.page-title::before {
   content: '# ';
   color: var(--muted);
+  font-weight: 400;
 }
 
+/* ── body text ── */
 p { margin-bottom: 1rem; }
 
+/* ── lists ── */
 ul, ol {
+  list-style: none;
   padding-left: 1.3rem;
   margin-bottom: 0.5rem;
-  list-style: none;
 }
 
 li {
   margin-bottom: 0.3rem;
-  padding-left: 0.5rem;
+  padding-left: 0.4rem;
 }
 
 li::before {
-  content: '∗ ';
+  content: '* ';
   color: var(--muted);
   margin-left: -1.3rem;
 }
 
-/* publication entries */
+/* ── publications ── */
 .pub { margin-bottom: 1.3rem; }
 
 .pub-award {
   font-size: 0.82rem;
-  color: #c9963a;
+  color: #b09060;
   display: block;
   margin-top: 0.2rem;
 }
 
-.pub-award::before {
-  content: '★ ';
-}
+.pub-award::before { content: '> '; }
 
-/* nav footer */
+/* ── footer nav + toggle ── */
 .site-nav {
   margin-top: 4rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #2a2d35;
+  border-top: 1px solid var(--border);
   font-size: 0.85rem;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem 1.4rem;
 }
 
 .site-nav a { color: var(--muted); }
 .site-nav a:hover { color: var(--hover); text-decoration: none; }
 
-/* responsive */
+.theme-toggle {
+  margin-left: auto;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.82rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+}
+
+/* ── responsive ── */
 @media (max-width: 500px) {
   .header-row { flex-direction: column; gap: 1rem; }
-  .header-photo { width: 75px; height: 75px; }
+  .header-photo { width: 80px; height: 80px; }
+  .theme-toggle { margin-left: 0; }
 }
