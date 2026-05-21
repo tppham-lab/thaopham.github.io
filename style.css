@@ -59,7 +59,7 @@ a:hover {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 50%;
   margin-top: 0.2rem;
   filter: grayscale(30%);
 }
