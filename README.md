@@ -17,7 +17,7 @@ My work unfolds along two lines:
 
 **Indochina-origin communities in comparative perspective.** I study Vietnamese, Cambodian, Lao, and Hmong populations in the United States, England, and France — groups that education data routinely collapses into a single "Asian American" or "Asian" category. My research disaggregates these communities to ask how Confucian heritage and refugee experience jointly shape educational trajectories across national contexts.
 
-**Methods:** spatial regression, adaptive LASSO, Tobit models, regression discontinuity, Bayesian inference, NLP.
+**Methods:** Spatial analysis, Bayesian inference, Natural language processing (NLP).
 
 **Fields:** education policy, sociology of education, comparative education, quantitative history, Asian American studies.
 
