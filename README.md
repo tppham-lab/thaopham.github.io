@@ -66,4 +66,4 @@ Tran, T.-V., **Pham, T.P.**, Nguyen, M.-H., Do, L.-T., & Pham, H.-H. (2022). "Ec
 - **PhD**, Education Policy Studies — University of Wisconsin–Madison *(in progress)*
 - **MS**, Applied Statistics — University of Wisconsin–Madison
 - **MA**, Public Policy — Indiana University Bloomington
-- **BA/BSc**, Economics — University of Manchester, UK
+- **BSc**, Economics — University of Manchester, UK
