@@ -13,7 +13,7 @@ I am an education policy researcher whose work sits at the intersection of **qua
 
 My work unfolds along two lines:
 
-**Spatial inequality in Vietnam.** I use spatial econometrics and Bayesian methods to examine how Confucian institutional legacies shape contemporary gaps in educational investment and attainment across Vietnamese provinces. This line of work treats historical culture as a causal variable, not background noise.
+**Spatial inequality in Vietnam.** I use spatial econometrics and Bayesian methods to examine how Confucian institutional legacies shape contemporary gaps in educational investment and attainment across Vietnamese provinces. This line of work treats historical institution as a causal variable, not background noise.
 
 **Indochina-origin communities in comparative perspective.** I study Vietnamese, Cambodian, Lao, and Hmong populations in the United States, England, and France — groups that education data routinely collapses into a single "Asian American" or "Asian" category. My research disaggregates these communities to ask how Confucian heritage and refugee experience jointly shape educational trajectories across national contexts.
 
